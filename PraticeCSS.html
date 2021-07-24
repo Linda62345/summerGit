@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		.title{font-weight: bold;font-size: 24px}
+		.content{border: 1px solid blue;margin-top: 10px;margin-bottom: 10px;}
+		.keyword{color:red}
+		.box{ position: absolute;left: 600px; top: 230px;
+			  width: 200px;height: 100px;background: blueviolet;font-weight: bold;}
+		.box1{position: relative;left: 0px;top: 0px;
+		      width: 200px;height: 100px; background: yellow;}
+	</style>
+</head>
+<body>
+	<div class="title">Today weather is nice.文字設為粗體 字體稍微放大</div>
+	<div class="content">I was strolling in the <span class="keyword">river bank 不會換行</span>...</div>
+	<div style="width: 400px;padding: 10px;border: 2px dashed greenyellow;">try try see虛線匡，上下有距離，框框也有width<br/>換行看看</div>
+
+	<div style="font-weight: bold;font-size: 24px;">Today weather is nice.文字設為bold font-sixe稍微放大</div>
+	<div style="border: 1px solid blue;margin-top: 10px;margin-bottom: 10px;">I was strolling in the <span style="color:red">river bank 不會換行相較於div box的感覺</span>...</div>
+	<div style="width: 400px;padding: 10px;border: 2px dashed greenyellow;">try<span style="position: relative;top:-8px;font-size:5px">2 </span>see虛線匡padding，上下有距離，框框也有width<br/>換行看看br</div>
+
+	<div class="title">按照class模式可簡化code</div>
+	<div class="content">按照class模式可簡化code</div>
+	<div class="box">let's try有附加絕對定位absolute</div>
+	<div class="box1">相對位置 以div會出現的位置為0,0</div>
+</body>
+</html>
