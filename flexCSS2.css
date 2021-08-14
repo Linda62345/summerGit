@@ -1,0 +1,43 @@
+body{margin: 0px;}
+/*樣式設定*/
+nav{
+	display: flex;
+
+}
+nav>.logo{
+	/*none沒有彈性，固定尺寸*/
+	flex: none;width: 100px;
+	background-color:#ffcccc
+}
+nav>.menu{
+	/*auto自動填滿畫面*/
+	flex: auto;
+	background-color:#ccccff
+}
+nav>.user{
+	flex: none;width: 150px;
+	background-color: #ccffcc;
+}
+main{/*容器*/
+    display: flex; flex-wrap: wrap;/*關鍵！！會換行*/
+    justify-content: center;/*設定水平對齊*/
+    align-items: flex-start;/*垂直對齊靠中center（可靠上flex-start下flex-end 預設值stretch）*/
+    background-color: #cccccc;
+}
+main>.item{/*項目*/
+    flex: none;/*不會自由縮放*/
+    width: 270px;margin: 10px;/*1200->(270+10+10)*4*/
+    background-color: #ffcccc;
+}
+@media (max-width: 1200px)
+{
+    main>.item{
+    	width: 45%;/*一行有兩格（平板）*/
+    }
+}
+@media (max-width:  500px)
+{
+	main.utem{
+		width: 90%;/*一行一格（手機）*/
+	}
+}
