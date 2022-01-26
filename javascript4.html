@@ -1,0 +1,41 @@
+<html>
+<title>Javascript迴圈</title>
+<script type="text/javascript">
+	var x=1,n=0;
+	while(x<=100){
+		n+=x;//1加到100
+		x++;
+		}
+		alert("while迴圈:"+n);
+	var y=1,sum=0;
+	for(y;y<=100;y++)
+	{
+		sum+=y;
+	}
+	alert("for迴圈:"+sum);
+	/*
+	break 強制跳出迴圈
+	continue 強制進行下一次的迴圈
+	*/
+	var k=0;
+	while(k<=100)
+	{
+		if(k==50)
+		{
+			break;
+		}
+		k++;
+	}
+	alert("break:"+k);
+	var s=0;
+	for(var i=0;i<=100;i++) 
+	{
+		if(i%2==0)
+		{
+			continue;
+		}
+		s++;
+	}
+	alert("continue:"+s);
+</script>
+</html>

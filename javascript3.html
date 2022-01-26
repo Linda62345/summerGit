@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Javascript3</title>
+	<script>
+		/*var money=prompt("提領多少錢");
+		if(money>30000)
+		{
+			alert("超過提領上限");
+		}
+		else if(money<0)
+		{
+			alert("請輸入正數");
+		}
+		else
+		{
+			alert("提領："+money);
+		}*/
+		var n1=prompt("請輸入數字","");
+		var n2=prompt("請輸入數字");
+        var op=prompt("請輸入運算指令,+,-,*,/");
+        //要把字串換成數字
+        n1=Number(n1);
+        n2=Number(n2);
+        if(op=="+")
+        {
+        	alert(n1+n2);
+        }
+        else if(op=="-")
+        {
+        	alert(n1-n2);
+        }
+        else if(op=="*")
+        {
+        	alert(n1*n2);
+        }
+        else if(op=="/")
+        {
+        	alert(n1/n2);
+        }
+        else
+        {
+        	alert("Mistakes,Please enter right direction");
+        }
+	</script>
+</head>
+</html>

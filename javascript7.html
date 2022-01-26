@@ -1,0 +1,65 @@
+ <html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>Javascript Object</title>
+	<script type="text/javascript">
+		/*
+		//建立空白物件
+		var point=new Object();
+		point.x=3; //point物件裡面的x
+		point.y=4; //屬性 只要不是方法 都是屬性
+		point.getPosition=function()//方法{
+			alert(this.x+","+this.y);
+			//this代表此物件
+
+		};
+		point.getPosition();
+
+
+		var player=new Object();
+		player.name="John";
+		player.hp=100;
+		player.fight=function(){
+			var a=prompt("攻擊");
+			a=Number(a);
+			this.hp=this.hp-a;
+		};
+		player.rest=function(){
+			this.hp++;
+			alert("rest for +hp");
+
+		};
+		player.report=function(){
+			alert(this.name+": "+this.hp);
+		};
+player.fight();
+player.rest();
+player.report();
+*/
+
+function Player(name,hp){//建構物件的函式
+	//this代表新建的空白物件
+	this.name=name;
+
+	this.hp=hp;
+	this.fight=function(){
+		this.hp-=2;
+	};
+	this.rest=function(){
+		this.hp++;
+	};
+	this.report=function(){
+		alert(this.name+": "+this.hp);
+	};
+}
+var player = new Player("john",100);
+player.fight();//要記得呼叫才會動作
+player.report();
+var player2 = new Player("Linda",300);
+player.fight();
+player2.rest();
+player2.report();
+
+</script>
+</head>
+</html>

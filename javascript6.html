@@ -1,0 +1,23 @@
+<html>
+<title>javascript 函式</title>
+<head>
+	<script type="text/javascript">
+		/*var add=function(n1,n2){
+		alert(n1+n2);
+		};
+		add(20,30);
+		var test=add;
+		test(10,20);*/
+		var x=3;
+		function test(){
+			var y=5;
+			var x=9;//系統會先找函數裡面的x 所以會優先使用x=9
+			alert(x+y);
+
+		}
+		test();
+		alert(x);//印外層x=3
+		//alert(x+y);此為錯誤的寫法 外部的程式碼，不能使用內部的變數 
+	</script>
+</head>
+</html>
